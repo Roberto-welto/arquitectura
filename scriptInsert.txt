@@ -1,0 +1,16 @@
+CREATE SEQUENCE seq_usuario as INT
+start with 100
+INCREMENT BY 10
+NO MAXVALUE
+
+INSERT INTO Usuario VALUES (NEXT VALUE FOR seq_usuario,'203275242','irojel','ignaciorojel','1')
+INSERT INTO Usuario VALUES (NEXT VALUE FOR seq_usuario,'123456789','roi.gonzalez','123456','1')
+
+
+INSERT INTO Cargo VALUES(1,'Administrador')
+INSERT INTO Cargo VALUES(2,'Farmaceutico')
+INSERT INTO Cargo VALUES(3,'Operario')
+INSERT INTO Cargo VALUES(4,'Bodeguero')
+INSERT INTO Cargo VALUES(5,'Usuario')
+
+SELECT u.nombre_usuario, c.desc_cargo from Usuario u join Cargo c on u.id_cargo= c.id_cargo
