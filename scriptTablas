@@ -1,0 +1,54 @@
+USE [DoctorSami]
+GO
+
+/****** Object:  Table [dbo].[Usuario]    Script Date: 06-12-2019 22:07:42 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Usuario](
+	[id_usuario] [int] NOT NULL,
+	[rut_usuario] [nvarchar](9) NULL,
+	[nombre_usuario] [nvarchar](20) NULL,
+	[pass_usuario] [nvarchar](50) NULL,
+	[id_cargo] [int] NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[id_usuario] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD  CONSTRAINT [FK_Cargo_Usuario] FOREIGN KEY([id_cargo])
+REFERENCES [dbo].[Cargo] ([id_cargo])
+GO
+
+ALTER TABLE [dbo].[Usuario] CHECK CONSTRAINT [FK_Cargo_Usuario]
+GO
+
+
+
+
+USE [DoctorSami]
+GO
+
+/****** Object:  Table [dbo].[Cargo]    Script Date: 06-12-2019 22:07:34 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Cargo](
+	[id_cargo] [int] NOT NULL,
+	[desc_cargo] [nvarchar](20) NULL,
+ CONSTRAINT [PK_Cargo] PRIMARY KEY CLUSTERED 
+(
+	[id_cargo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
