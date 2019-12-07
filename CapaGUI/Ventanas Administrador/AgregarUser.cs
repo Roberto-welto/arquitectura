@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using CapaDTO;
 using CapaNegocio;
 
+
 namespace CapaGUI.Ventanas_Administrador
 {
     public partial class AgregarUser : Form
@@ -43,8 +44,9 @@ namespace CapaGUI.Ventanas_Administrador
             }
             try
             {
-                NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                Usuario auxUsuario = auxNegocio.verificar_usuario(txtRut.Text, txtNombreUser.Text);
+                
+                ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                ServiceAdmin.Usuario auxUsuario = auxNegocio.verificar_usuario_service(txtRut.Text, txtNombreUser.Text);
                 if(auxUsuario == null)
                 {
                     MessageBox.Show("Todo ok");
@@ -69,15 +71,15 @@ namespace CapaGUI.Ventanas_Administrador
         {
             if (validar())
             {
-                Usuario auxUsuario = new Usuario();
-                NegocioAdministrador auxNegocio = new NegocioAdministrador();
+                ServiceAdmin.Usuario auxUsuario = new ServiceAdmin.Usuario();
+                ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
 
                 auxUsuario.Nombre = txtNombreUser.Text;
                 auxUsuario.Rut = txtRut.Text;
                 auxUsuario.Contraseña = txtPassword.Text;
                 auxUsuario.Cargo = cboCargo.SelectedIndex;
 
-                auxNegocio.agregar_usuario(auxUsuario);
+                auxNegocio.agregar_usuario_service(auxUsuario);
                 MessageBox.Show("Usuario agregado correctamente");
                 limpiarControles();
                 

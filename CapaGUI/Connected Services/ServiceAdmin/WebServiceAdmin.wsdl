@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="verificar_usuario_service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rut" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verificar_usuario_serviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verificar_usuario_serviceResult" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Usuario">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Contraseña" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cargo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rut" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="agregar_usuario_service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auxUsuario" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="agregar_usuario_serviceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="consulta_usuario_service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consulta_usuario_serviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consulta_usuario_serviceResult" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listarUsuarios_service">
+        <s:complexType />
+      </s:element>
+      <s:element name="listarUsuarios_serviceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarUsuarios_serviceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminar_usuario_service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminar_usuario_serviceResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="actualizar_usuario_service">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="auxUsuario" type="tns:Usuario" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="actualizar_usuario_serviceResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="verificar_usuario_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:verificar_usuario_service" />
+  </wsdl:message>
+  <wsdl:message name="verificar_usuario_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:verificar_usuario_serviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="agregar_usuario_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:agregar_usuario_service" />
+  </wsdl:message>
+  <wsdl:message name="agregar_usuario_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:agregar_usuario_serviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="consulta_usuario_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:consulta_usuario_service" />
+  </wsdl:message>
+  <wsdl:message name="consulta_usuario_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:consulta_usuario_serviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarUsuarios_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:listarUsuarios_service" />
+  </wsdl:message>
+  <wsdl:message name="listarUsuarios_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:listarUsuarios_serviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminar_usuario_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminar_usuario_service" />
+  </wsdl:message>
+  <wsdl:message name="eliminar_usuario_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminar_usuario_serviceResponse" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_usuario_serviceSoapIn">
+    <wsdl:part name="parameters" element="tns:actualizar_usuario_service" />
+  </wsdl:message>
+  <wsdl:message name="actualizar_usuario_serviceSoapOut">
+    <wsdl:part name="parameters" element="tns:actualizar_usuario_serviceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService2Soap">
+    <wsdl:operation name="verificar_usuario_service">
+      <wsdl:input message="tns:verificar_usuario_serviceSoapIn" />
+      <wsdl:output message="tns:verificar_usuario_serviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="agregar_usuario_service">
+      <wsdl:input message="tns:agregar_usuario_serviceSoapIn" />
+      <wsdl:output message="tns:agregar_usuario_serviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consulta_usuario_service">
+      <wsdl:input message="tns:consulta_usuario_serviceSoapIn" />
+      <wsdl:output message="tns:consulta_usuario_serviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listarUsuarios_service">
+      <wsdl:input message="tns:listarUsuarios_serviceSoapIn" />
+      <wsdl:output message="tns:listarUsuarios_serviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminar_usuario_service">
+      <wsdl:input message="tns:eliminar_usuario_serviceSoapIn" />
+      <wsdl:output message="tns:eliminar_usuario_serviceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_usuario_service">
+      <wsdl:input message="tns:actualizar_usuario_serviceSoapIn" />
+      <wsdl:output message="tns:actualizar_usuario_serviceSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService2Soap" type="tns:WebService2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="verificar_usuario_service">
+      <soap:operation soapAction="http://tempuri.org/verificar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregar_usuario_service">
+      <soap:operation soapAction="http://tempuri.org/agregar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consulta_usuario_service">
+      <soap:operation soapAction="http://tempuri.org/consulta_usuario_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarUsuarios_service">
+      <soap:operation soapAction="http://tempuri.org/listarUsuarios_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminar_usuario_service">
+      <soap:operation soapAction="http://tempuri.org/eliminar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_usuario_service">
+      <soap:operation soapAction="http://tempuri.org/actualizar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService2Soap12" type="tns:WebService2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="verificar_usuario_service">
+      <soap12:operation soapAction="http://tempuri.org/verificar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregar_usuario_service">
+      <soap12:operation soapAction="http://tempuri.org/agregar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consulta_usuario_service">
+      <soap12:operation soapAction="http://tempuri.org/consulta_usuario_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarUsuarios_service">
+      <soap12:operation soapAction="http://tempuri.org/listarUsuarios_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminar_usuario_service">
+      <soap12:operation soapAction="http://tempuri.org/eliminar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="actualizar_usuario_service">
+      <soap12:operation soapAction="http://tempuri.org/actualizar_usuario_service" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService2">
+    <wsdl:port name="WebService2Soap" binding="tns:WebService2Soap">
+      <soap:address location="https://localhost:44311/WebServiceAdmin.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService2Soap12" binding="tns:WebService2Soap12">
+      <soap12:address location="https://localhost:44311/WebServiceAdmin.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

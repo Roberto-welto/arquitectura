@@ -26,8 +26,8 @@ namespace CapaGUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            NegocioLogin auxNegocio = new NegocioLogin();
-            Usuario auxUsuario = auxNegocio.login_user(txtUser.Text, txtPassword.Text);
+            ServiceLogin.WebService1SoapClient auxNegocio = new ServiceLogin.WebService1SoapClient();
+            ServiceLogin.Usuario auxUsuario = auxNegocio.login_user_service(txtUser.Text, txtPassword.Text);
 
             try
             {

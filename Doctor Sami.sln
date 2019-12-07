@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaGUI", "CapaGUI\CapaGUI.csproj", "{57FCFBA3-1F0F-4AF0-92CA-9C42198C7627}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EF15E073-90B3-4343-9D03-F92DD036744F} = {EF15E073-90B3-4343-9D03-F92DD036744F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDTO", "CapaDTO\CapaDTO.csproj", "{35FAF369-960F-4626-9A09-C56F551BF3AB}"
 EndProject

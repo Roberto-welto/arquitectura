@@ -36,8 +36,8 @@ namespace CapaGUI.Ventanas_Administrador
            
             try
             {
-                NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                Usuario auxUser = auxNegocio.consulta_usuario(txtUsername.Text);
+                ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                ServiceAdmin.Usuario auxUser = auxNegocio.consulta_usuario_service(txtUsername.Text);
                 if(auxUser == null)
                 {
                     MessageBox.Show("No existe el usuario a buscar, pero te mostramos los usuarios registrados");
@@ -58,8 +58,8 @@ namespace CapaGUI.Ventanas_Administrador
             {
                 MessageBox.Show("Usuario encontrado");
 
-                NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                Usuario auxUser = auxNegocio.consulta_usuario(txtUsername.Text);
+                ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                ServiceAdmin.Usuario auxUser = auxNegocio.consulta_usuario_service(txtUsername.Text);
 
                 txtRut.Text = auxUser.Rut;
                 txtPass.Text = auxUser.Contraseña;
@@ -69,8 +69,8 @@ namespace CapaGUI.Ventanas_Administrador
             {
                 try
                 {
-                    NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                    this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios();
+                    ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                    this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios_service();
                     this.dataGridViewUsuarios.DataMember = "Usuario";
                 }
                 catch (Exception ex)
@@ -85,11 +85,11 @@ namespace CapaGUI.Ventanas_Administrador
         {
             if (validarCampoUser())
             {
-                NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                auxNegocio.eliminar_usuario(txtUsername.Text);
+                ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                auxNegocio.eliminar_usuario_service(txtUsername.Text);
                 MessageBox.Show($"Usuario {txtUsername} eliminado exitosamente");
                 limpiarControles();
-                this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios();
+                this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios_service();
                 this.dataGridViewUsuarios.DataMember = "Usuario";
 
 
@@ -102,19 +102,19 @@ namespace CapaGUI.Ventanas_Administrador
             {
                 try
                 {
-                    NegocioAdministrador auxNegocio = new NegocioAdministrador();
-                    Usuario auxUser = new Usuario();
+                    ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
+                    ServiceAdmin.Usuario auxUser = new ServiceAdmin.Usuario();
 
                     auxUser.Nombre = txtUsername.Text;
                     auxUser.Rut = txtRut.Text;
                     auxUser.Contraseña = txtPass.Text;
                     auxUser.Cargo = cboCargo.SelectedIndex;
 
-                    auxNegocio.actualizar_usuario(auxUser);
+                    auxNegocio.actualizar_usuario_service(auxUser);
                     MessageBox.Show("Usuario actualizado correctamente");
 
                     limpiarControles();
-                    this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios();
+                    this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios_service();
                     this.dataGridViewUsuarios.DataMember = "Usuario";
                 }
                 catch (Exception ex)
