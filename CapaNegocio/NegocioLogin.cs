@@ -17,7 +17,7 @@ namespace CapaNegocio
         public void configurarConexion()
         {
             this.Conn = new Conexion();
-            this.Conn.CadenaConexion = "Data Source=DESKTOP-K7P6J82; Initial Catalog=DoctorSami;Integrated Security=True";
+            this.Conn.CadenaConexion = "Data Source=DESKTOP-VFCRG88; Initial Catalog=DoctorSami;Integrated Security=True";
             this.Conn.NombreDB = "DoctorSami";
             this.Conn.NombreTabla = "Usuario";
         }

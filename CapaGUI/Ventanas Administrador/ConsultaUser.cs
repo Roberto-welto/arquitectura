@@ -87,7 +87,7 @@ namespace CapaGUI.Ventanas_Administrador
             {
                 ServiceAdmin.WebService2SoapClient auxNegocio = new ServiceAdmin.WebService2SoapClient();
                 auxNegocio.eliminar_usuario_service(txtUsername.Text);
-                MessageBox.Show($"Usuario {txtUsername} eliminado exitosamente");
+                MessageBox.Show($"Usuario {txtUsername.Text} eliminado exitosamente");
                 limpiarControles();
                 this.dataGridViewUsuarios.DataSource = auxNegocio.listarUsuarios_service();
                 this.dataGridViewUsuarios.DataMember = "Usuario";
