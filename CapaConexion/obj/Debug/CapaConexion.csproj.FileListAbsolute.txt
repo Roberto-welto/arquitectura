@@ -1,0 +1,5 @@
+C:\Users\ignac\source\repos\Doctor Sami\CapaConexion\bin\Debug\CapaConexion.dll
+C:\Users\ignac\source\repos\Doctor Sami\CapaConexion\bin\Debug\CapaConexion.pdb
+C:\Users\ignac\source\repos\Doctor Sami\CapaConexion\obj\Debug\CapaConexion.csprojAssemblyReference.cache
+C:\Users\ignac\source\repos\Doctor Sami\CapaConexion\obj\Debug\CapaConexion.dll
+C:\Users\ignac\source\repos\Doctor Sami\CapaConexion\obj\Debug\CapaConexion.pdb
