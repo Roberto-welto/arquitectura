@@ -19,3 +19,13 @@ C:\Users\ignac\Desktop\Doctor Sami\CapaNegocio\obj\Debug\CapaNegocio.csproj.Core
 C:\Users\ignac\Desktop\Doctor Sami\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\ignac\Desktop\Doctor Sami\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\ignac\Desktop\Doctor Sami\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaConexion.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaDTO.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaConexion.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\bin\Debug\CapaDTO.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaNegocio\obj\Debug\CapaNegocio.pdb

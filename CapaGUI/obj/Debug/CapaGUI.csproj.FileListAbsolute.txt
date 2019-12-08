@@ -45,3 +45,26 @@ C:\Users\ignac\Desktop\Doctor Sami\CapaGUI\obj\Debug\CapaGUI.csproj.CoreCompileI
 C:\Users\ignac\Desktop\Doctor Sami\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
 C:\Users\ignac\Desktop\Doctor Sami\CapaGUI\obj\Debug\CapaGUI.exe
 C:\Users\ignac\Desktop\Doctor Sami\CapaGUI\obj\Debug\CapaGUI.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaGUI.exe.config
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaGUI.exe
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaGUI.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaDTO.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaNegocio.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaConexion.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaDTO.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaNegocio.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\bin\Debug\CapaConexion.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.csprojAssemblyReference.cache
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Login.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Properties.Resources.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventana_Farmaceutico.ConsultarProducto.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventana_Farmaceutico.Gestion.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventanas_Administrador.Admin.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventanas_Administrador.AgregarUser.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventanas_Administrador.ConsultaUser.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventanas_Bodeguero.Bodega.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.Ventanas_Operario.Form1.resources
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.csproj.GenerateResource.cache
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.csproj.CopyComplete
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.exe
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaGUI\obj\Debug\CapaGUI.pdb

@@ -3,3 +3,8 @@ C:\Users\ignac\source\repos\Doctor Sami\CapaDTO\bin\Debug\CapaDTO.pdb
 C:\Users\ignac\source\repos\Doctor Sami\CapaDTO\obj\Debug\CapaDTO.csprojAssemblyReference.cache
 C:\Users\ignac\source\repos\Doctor Sami\CapaDTO\obj\Debug\CapaDTO.dll
 C:\Users\ignac\source\repos\Doctor Sami\CapaDTO\obj\Debug\CapaDTO.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaDTO\bin\Debug\CapaDTO.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaDTO\bin\Debug\CapaDTO.pdb
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaDTO\obj\Debug\CapaDTO.csprojAssemblyReference.cache
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaDTO\obj\Debug\CapaDTO.dll
+C:\Users\timel\Desktop\Arquitectura\DoctorSami\CapaDTO\obj\Debug\CapaDTO.pdb
