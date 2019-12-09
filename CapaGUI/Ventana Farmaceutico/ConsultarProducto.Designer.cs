@@ -28,13 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button2 = new System.Windows.Forms.Button();
+            this.productoText1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.productoText2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(104, 224);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Buscar producto";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // productoText1
+            // 
+            this.productoText1.Location = new System.Drawing.Point(163, 112);
+            this.productoText1.Name = "productoText1";
+            this.productoText1.Size = new System.Drawing.Size(100, 20);
+            this.productoText1.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 112);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Nombre del producto";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(101, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Buscar producto";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(34, 146);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Sku producto";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // productoText2
+            // 
+            this.productoText2.Location = new System.Drawing.Point(163, 143);
+            this.productoText2.Name = "productoText2";
+            this.productoText2.Size = new System.Drawing.Size(100, 20);
+            this.productoText2.TabIndex = 5;
             // 
             // ConsultarProducto
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(284, 314);
+            this.Controls.Add(this.productoText2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.productoText1);
+            this.Controls.Add(this.button2);
             this.Name = "ConsultarProducto";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -44,5 +110,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox productoText1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox productoText2;
     }
 }

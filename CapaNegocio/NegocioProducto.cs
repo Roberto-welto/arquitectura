@@ -57,5 +57,17 @@ namespace CapaNegocio
             this.Conn.IsSelect = false;
             this.Conn.conectar();
         }
+        public DataSet getAllProductos()
+        {
+            this.configurarConexion();
+            this.Conn.CadenaSQL = ($"SELECT * FROM {this.Conn.NombreTabla} ;");
+            this.Conn.IsSelect = true;
+            this.Conn.conectar();
+            DataTable dt = this.Conn.DbDataSet.Tables[this.Conn.NombreTabla];
+            DataSet ds = new DataSet();
+            ds.Tables.Add(dt);
+
+            return ds;
+        }
     }
 }

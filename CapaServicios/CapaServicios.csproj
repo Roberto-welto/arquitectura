@@ -70,6 +70,7 @@
     <Content Include="Web.config" />
     <Content Include="WebServiceAdmin.asmx" />
     <Content Include="WebServiceLogin.asmx" />
+    <Content Include="WebServiceProducto.asmx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +80,10 @@
     </Compile>
     <Compile Include="WebServiceLogin.asmx.cs">
       <DependentUpon>WebServiceLogin.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WebServiceProducto.asmx.cs">
+      <DependentUpon>WebServiceProducto.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
   </ItemGroup>

@@ -28,5 +28,17 @@ namespace CapaGUI.Ventanas_Administrador
             Ventanas_Administrador.ConsultaUser Consultar = new Ventanas_Administrador.ConsultaUser();
             Consultar.Show();
         }
+
+        private void agregarUsuario(object sender, EventArgs e)
+        {
+            Ventanas_Administrador.AgregarUser Agregar = new Ventanas_Administrador.AgregarUser();
+            Agregar.Show();
+        }
+
+        private void consultarUsuario(object sender, EventArgs e)
+        {
+            Ventanas_Administrador.ConsultaUser Consultar = new Ventanas_Administrador.ConsultaUser();
+            Consultar.Show();
+        }
     }
 }

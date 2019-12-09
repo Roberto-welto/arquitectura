@@ -16,5 +16,21 @@ namespace CapaGUI.Ventanas_Operario
         {
             InitializeComponent();
         }
+
+        private void venderProducto(object sender, EventArgs e)
+        {
+            //ServiceProducto.WebService3SoapClient auxNegocio = new ServiceProducto.WebService3SoapClient();
+            try
+            {
+                //ServiceProducto.Producto auxProducto = auxNegocio.venderProducto(skuProducto.Text, cantidadProducto.Text);
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show("Ha ocurrido un error");
+                Console.WriteLine(ex.ToString());
+            }
+        }
+           
+           
     }
 }

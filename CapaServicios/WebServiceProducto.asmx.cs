@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.Data;
 
 namespace CapaServicios
 {
@@ -24,6 +25,19 @@ namespace CapaServicios
             CapaNegocio.NegocioProducto auxProductoBusqueda = new CapaNegocio.NegocioProducto();
             return auxProductoBusqueda.buscarProducto(sku, nombre);
             
+        }
+
+        [WebMethod]
+        public void venderProducto(string sku, int stock)
+        {
+            CapaNegocio.NegocioProducto auxProductoVenta = new CapaNegocio.NegocioProducto();
+            auxProductoVenta.venderProducto(stock, sku);
+        }
+        [WebMethod]
+        public DataSet getAllProductos()
+        {
+            CapaNegocio.NegocioProducto auxProductoAll = new CapaNegocio.NegocioProducto();
+            return auxProductoAll.getAllProductos();
         }
     }
 }

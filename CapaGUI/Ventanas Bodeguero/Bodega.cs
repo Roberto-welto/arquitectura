@@ -15,11 +15,14 @@ namespace CapaGUI.Ventanas_Bodeguero
         public Bodega()
         {
             InitializeComponent();
+            this.Bodega_Load();
         }
 
-        private void Bodega_Load(object sender, EventArgs e)
+        private void Bodega_Load()
         {
-
+            //ServiceProducto.WebService3SoapClient auxNegocio = new ServiceProducto.WebService3SoapClient();
+            //ServiceProducto.Producto auxProductos = auxNegocio.getAllProductos();
+            //listaProductos.DataSource = auxProductos;
         }
 
 
